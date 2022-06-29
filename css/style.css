@@ -1,0 +1,52 @@
+:root {
+    --main-color: rgb(89, 109, 72);
+    --main-bg: rgb(229, 231, 235);
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(../css/Norse-Bold.otf);
+}
+
+html, 
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    background-image: url("../img/bg-leaves.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 40%;
+}
+
+.logo {
+    padding: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.5);
+    font-family: norse-bold, sans-serif;
+    font-size: 2rem;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+}
+
+.logo img {
+    max-height: 100px;
+}
+
+.logo h1 {
+    margin: 0;
+    padding-top: 8px; /* Compensate to position text center with img */
+}

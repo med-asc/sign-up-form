@@ -135,9 +135,14 @@ input {
 }
 
 input:focus {
+  outline: none;
   box-shadow: 3px 3px 5px rgb(208, 208, 208);
-  border: 1px solid rgb(75, 75, 255);
+  border: 1px solid rgb(44, 88, 216);
   border-radius: 2px;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border: 1px solid rgb(216, 44, 70);
 }
 
 button {

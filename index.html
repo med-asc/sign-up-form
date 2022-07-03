@@ -38,18 +38,33 @@
                         <input type="email" name="email" id="email" placeholder=" " required>
                     </label>
                     <label for="phone-number">Phone number
-                        <input type="tel" name="phone-number" id="phone-number" 
+                        <input type="tel" 
+                            name="phone-number" 
+                            id="phone-number" 
                             placeholder=" " 
-                            required pattern="^(((\+46)|(0046))[\s-]?(\d){2}|(\d){3})[\s-]?(\d){3}[\s-]?(\d){2}[\s-]?(\d){2}" 
+                            required 
+                            pattern="^(((\+46)|(0046))[\s-]?(\d){2}|(\d){3})[\s-]?(\d){3}[\s-]?(\d){2}[\s-]?(\d){2}" 
                             title="Please enter a valid Swedish phone number, example: 070 123 12 12 or +46 70 123 12 12">
                     </label>
                 </div>
                 <div>
                     <label for="password">Password
-                        <input type="password" name="password" id="password" placeholder=" " required>
+                        <input type="password" 
+                            name="password" 
+                            id="password" 
+                            placeholder=" " 
+                            required
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Your password must be at least 8 characters and include one uppercase letter and one number">
                     </label>
                     <label for="confirm-password">Confirm password
-                        <input type="password" name="confirm-password" id="confirm-password" placeholder=" " required>
+                        <input type="password" 
+                            name="confirm-password" 
+                            id="confirm-password" 
+                            placeholder=" " 
+                            required
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Your password must be at least 8 characters and include one uppercase letter and one number">
                     </label>
                 </div>
             </section>

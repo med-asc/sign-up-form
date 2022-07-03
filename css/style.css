@@ -117,9 +117,7 @@ section > div {
 }
 
 label {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: 25%;
+  min-width: 180px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.8rem;
@@ -145,6 +143,10 @@ input:invalid:not(:focus):not(:placeholder-shown) {
     border: 1px solid rgb(216, 44, 70);
 }
 
+.error {
+    border: 1px solid rgb(216, 44, 70);
+}
+
 button {
   background-color: var(--main-color);
   color: rgb(255, 255, 255);
@@ -152,4 +154,11 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.help {
+    margin: 0;
+    color: rgb(216, 44, 70);
+    font-size: 0.8rem;
+    min-height: 16px;
 }
